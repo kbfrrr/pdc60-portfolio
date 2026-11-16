@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A PDC60 prompt engineering portfolio. Follow the experiments, compare the outputs, and see what each activity taught.">
+  <meta name="theme-color" content="#0f0e24">
+  <title>Prompt Engineering Portfolio · PDC60</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="activities.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <main id="main" class="wrap">
+    <section class="title-screen" aria-labelledby="cover-title">
+      <div class="ts-board">
+        <span class="ts-corner ts-tl" aria-hidden="true"></span><span class="ts-corner ts-tr" aria-hidden="true"></span>
+        <span class="ts-corner ts-bl" aria-hidden="true"></span><span class="ts-corner ts-br" aria-hidden="true"></span>
+        <p class="ts-kicker">PDC60 <span aria-hidden="true">·</span> Prompt Engineering <span aria-hidden="true">·</span> Course Portfolio</p>
+        <p class="ts-save" id="ts-save">Save file</p>
+        <h1 id="cover-title" class="ts-title">MC02</h1>
+        <a class="ts-start" href="#level-01"><span class="ts-cursor" aria-hidden="true">▶</span> View my run</a>
+        <nav class="ts-menu" aria-label="Saved run">
+          <a href="#map"><span class="ts-option">Level history</span><span class="ts-detail">Every level and what it unlocked</span></a>
+          <a href="#reflection"><span class="ts-option">Reflection</span><span class="ts-detail">What changed over the course</span></a>
+        </nav>
+        <dl class="ts-player" id="ts-player" aria-label="Run summary"></dl>
+      </div>
+    </section>
+
+    <section class="map" id="map" aria-labelledby="map-title" tabindex="-1">
+      <div class="section-lead">
+        <h2 id="map-title">Level history</h2>
+        <p>Each class activity is a level I have already played. Pick one to replay it: how the prompt changed from the level before, what the responses showed, and the skill it unlocked.</p>
+      </div>
+      <div class="map-hud" id="map-hud"></div>
+      <div class="map-board" id="map-board">
+        <noscript>
+          <ol class="noscript-levels">
+            <li>Level 01 · Personalizing ChatGPT: <a href="assets/without-personalization.png">baseline screenshot</a>, <a href="assets/with-personalization-example.png">personalized screenshot</a></li>
+          </ol>
+        </noscript>
+      </div>
+    </section>
+
+    <article class="case-study level-panel" id="level"></article>
+
+    <section class="reflection" id="reflection" aria-labelledby="reflection-title"></section>
+
+  </main>
+
+  <footer class="site-footer wrap">
+    <span>PDC60 <span aria-hidden="true">/</span> Prompt Engineering Portfolio</span>
+    <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+  </footer>
+</body>
+</html>
