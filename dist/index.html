@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A PDC60 prompt engineering portfolio. Follow the experiments, compare the outputs, and see what each activity taught.">
+  <meta name="theme-color" content="#f8f7ef">
+  <title>Prompt Engineering Portfolio · PDC60</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="identity" href="#top">
+      <img src="assets/mark.svg" width="32" height="32" alt="">
+      <span>PDC60 <span class="identity-separator">/</span> Portfolio</span>
+    </a>
+    <nav aria-label="Portfolio">
+      <a href="#journal">Journal</a>
+      <a href="#activity-01">Activity 01</a>
+      <a href="#next">Next step</a>
+    </nav>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="cover" aria-labelledby="cover-title">
+      <div class="cover-copy">
+        <p class="course">Prompt Engineering <span aria-hidden="true">·</span> Course Portfolio</p>
+        <h1 id="cover-title">Learning to<br class="desktop-break"> prompt with <em>purpose.</em></h1>
+        <p class="intro">A record of my class activities, what changed in each response, and what I can try in the next prompt.</p>
+        <a class="primary-link" href="#activity-01">Read the first activity
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+      </div>
+      <figure class="cover-plate">
+        <svg class="plate-art" viewBox="0 0 510 350" role="img" aria-labelledby="diagram-title diagram-desc">
+          <title id="diagram-title">A university network, divided by department</title>
+          <desc id="diagram-desc">One 192.168.1.0 slash 24 network branches into four slash 26 subnets for the Registrar, Accounting, Library, and Lab.</desc>
+          <defs>
+            <pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse">
+              <path d="M22 0H0V22" fill="none" stroke="#8eabff" stroke-width="1" opacity=".25"/>
+            </pattern>
+          </defs>
+          <rect width="510" height="350" fill="#173ab8"/>
+          <path d="M0 0h510v350H0z" fill="url(#grid)"/>
+          <g fill="none" stroke="#a4b9ff" stroke-width="1" opacity=".65">
+            <path d="M26 54V26h28m402 0h28v28M26 296v28h28m402 0h28v-28"/>
+            <path d="M26 175h15m443 0h-15M255 26v15m0 283v-15"/>
+          </g>
+          <path d="M255 155v40M71 226v-31h368v31m-246 0v-31m124 31v-31" fill="none" stroke="#ecf1ff" stroke-width="2"/>
+          <rect x="148" y="80" width="214" height="75" rx="5" fill="#f8f7ef" stroke="#f8f7ef" stroke-width="2"/>
+          <text x="255" y="110" text-anchor="middle" fill="#17224b" class="svg-label">UNIVERSITY NETWORK</text>
+          <text x="255" y="133" text-anchor="middle" fill="#173ab8" class="svg-data">192.168.1.0/24</text>
+          <g fill="#13319c" stroke="#d2dfff" stroke-width="1.5">
+            <rect x="17" y="226" width="108" height="62" rx="4"/>
+            <rect x="139" y="226" width="108" height="62" rx="4"/>
+            <rect x="263" y="226" width="108" height="62" rx="4"/>
+            <rect x="385" y="226" width="108" height="62" rx="4"/>
+          </g>
+          <g text-anchor="middle" fill="#f8f7ef" class="svg-label">
+            <text x="71" y="253">Registrar</text>
+            <text x="193" y="253">Accounting</text>
+            <text x="317" y="253">Library</text>
+            <text x="439" y="253">Lab</text>
+          </g>
+          <g text-anchor="middle" fill="#dbe5ff" class="svg-data-small">
+            <text x="71" y="273">.0/26</text>
+            <text x="193" y="273">.64/26</text>
+            <text x="317" y="273">.128/26</text>
+            <text x="439" y="273">.192/26</text>
+          </g>
+        </svg>
+        <figcaption><span>Fig. 01</span> Redrawn from Activity 01’s personalized output.</figcaption>
+      </figure>
+    </section>
+
+    <section class="journal" id="journal" aria-labelledby="journal-title">
+      <div class="section-lead">
+        <h2 id="journal-title">Learning journal</h2>
+        <p>Each entry follows the same path: what I tried, what the response showed, and what to test next.</p>
+      </div>
+      <ol class="journey">
+        <li class="journey-entry">
+          <a href="#activity-01">
+            <span class="entry-index">01</span>
+            <span class="entry-name">Personalizing ChatGPT</span>
+            <span class="entry-note">See how learning preferences shaped one answer.</span>
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+        </li>
+        <li class="journey-entry future">
+          <a href="#next">
+            <span class="entry-index">Next</span>
+            <span class="entry-name">Revising the prompt itself</span>
+            <span class="entry-note">A proposed experiment for the next entry.</span>
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+          </a>
+        </li>
+      </ol>
+    </section>
+
+    <article class="case-study" id="activity-01" aria-labelledby="activity-title">
+      <header class="section-lead activity-lead">
+        <div>
+          <p class="activity-number">Activity 01</p>
+          <h2 id="activity-title">Personalizing ChatGPT</h2>
+        </div>
+        <p>Can the same question produce an explanation that better fits how I learn?</p>
+      </header>
+
+      <div class="setup">
+        <div>
+          <h3>What I tried</h3>
+          <p>Using a structured interview prompt provided by my professor, I answered questions about how I use ChatGPT and how I prefer to learn. I then asked the same question with and without the resulting personalization.</p>
+        </div>
+        <blockquote class="preference">
+          <p>“Start with why something exists, then explain how it works using relevant analogies and practical examples.”</p>
+          <footer>From my personalization settings</footer>
+        </blockquote>
+      </div>
+
+      <div class="prompt-strip">
+        <span>Same prompt in both chats</span>
+        <code>explain subnetting</code>
+      </div>
+
+      <section class="comparison" aria-labelledby="comparison-title">
+        <h3 id="comparison-title">Compare the responses</h3>
+        <div class="comparison-grid">
+          <section class="response baseline" aria-labelledby="baseline-title">
+            <h4 id="baseline-title">Without personalization</h4>
+            <p>Starts with an apartment-building analogy and a list of benefits. It then uses a table to show how each part of an IP address converts to binary.</p>
+            <figure>
+              <a class="evidence-link" href="assets/without-personalization.png">
+                <img src="assets/without-personalization.png" width="737" height="859" loading="lazy" alt="The baseline answer defines subnetting, gives an apartment-building analogy, and converts the address 192.168.1.10 into binary.">
+                <span>Open baseline screenshot <span aria-hidden="true">↗</span></span>
+              </a>
+            </figure>
+          </section>
+          <section class="response personalized" aria-labelledby="personalized-title">
+            <h4 id="personalized-title">With personalization</h4>
+            <p>Starts with a university network and shows one <code>/24</code> network split into four <code>/26</code> subnets. A second visual shows which bits identify the network and which identify the host.</p>
+            <figure>
+              <a class="evidence-link" href="assets/with-personalization-example.png">
+                <img src="assets/with-personalization-example.png" width="738" height="862" loading="lazy" alt="The personalized answer diagrams a university network split into four subnets for the Registrar, Accounting, Library, and Computer Lab.">
+                <span>Open personalized screenshot <span aria-hidden="true">↗</span></span>
+              </a>
+            </figure>
+            <details class="more-evidence">
+              <summary>See the IP address and subnet mask example</summary>
+              <figure>
+                <a class="evidence-link" href="assets/with-personalization-details.png">
+                  <img src="assets/with-personalization-details.png" width="770" height="850" loading="lazy" alt="The answer shows four octets and uses color to separate the first 24 network bits from the eight host bits.">
+                  <span>Open subnet mask screenshot <span aria-hidden="true">↗</span></span>
+                </a>
+              </figure>
+            </details>
+          </section>
+        </div>
+        <p class="evidence-note">The screenshots show excerpts of the two ChatGPT responses.</p>
+      </section>
+
+      <section class="takeaway" aria-labelledby="takeaway-title">
+        <h3 id="takeaway-title">What this showed</h3>
+        <p>Both answers explained the idea. The university example carried it further by showing how a network could actually be divided. That made the personalized response a closer match for my preference to start with the big picture and follow it with a practical example.</p>
+      </section>
+    </article>
+
+    <section class="next-step" id="next" aria-labelledby="next-title">
+      <h2 id="next-title">What I could test next</h2>
+      <div>
+        <p>Keep the ChatGPT settings the same and revise the prompt. Try adding one specific request, such as “include a worked example,” then compare whether the revised output is easier to apply.</p>
+        <p class="next-note">Proposed experiment <span aria-hidden="true">·</span> No result recorded yet</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <span>PDC60 <span aria-hidden="true">/</span> Prompt Engineering Portfolio</span>
+    <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+  </footer>
+</body>
+</html>
