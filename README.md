@@ -1,12 +1,20 @@
 # PDC60 Prompt Engineering Portfolio
 
-Open `dist/index.html` in a browser to read the portfolio locally. The page uses plain HTML and CSS and needs no build step.
+Double-click **Start Portfolio.cmd** to open the site at <http://127.0.0.1:4173/>. It only accepts connections from this computer. Run the launcher again after restarting Windows.
 
-Add each new class activity to the learning journal and give it its own section. For each activity:
+You can also run `node serve-local.cjs` from this folder to keep the server attached to your terminal, then press Ctrl+C to stop it. To read the portfolio without running a server, open `dist/index.html` directly in a browser. The page needs no build step.
 
-1. State the task and what you wanted the output to do.
-2. Record the exact prompt, the revision, and anything else that changed, such as personalization.
-3. Compare a specific detail from each output. Include real screenshots or excerpts and explain which response better met the goal.
-4. Say what the result suggests and what you would change in the next experiment.
+## Adding an activity (a level)
 
-Label an idea as a proposed experiment until its prompts and results are available. Put new screenshots in `dist/assets/` and use descriptive alternative text for each image.
+The level map, XP bar, skill badges, and prompt diffs are all built from `dist/activities.js`. To add an activity, edit its object in that list (or replace one of the `locked` placeholders):
+
+- `id`, `title`: the level number and name.
+- `skill`: the prompting skill it unlocks, shown as a badge (for example "Role prompting").
+- `status`: `done` once the prompts and results are recorded, `proposed` for a planned experiment with no result yet, `locked` for an empty slot.
+- `question`, `tried`: what you wanted the output to do and what you did.
+- `prompt`: the exact prompt, one line per item. The page shows a red/green diff against the previous level's prompt, so keep lines that didn't change identical.
+- `setting` (optional): anything else that changed, such as personalization or a system prompt.
+- `outputs`: screenshots to compare, each with a `label`, a short `summary` of a specific detail, and descriptive `alt` text. Set `highlight: true` on the response that better met the goal.
+- `takeaway`: what the result suggests and what you would change next.
+
+Keep an idea as `proposed` until its prompts and results are available. Put new screenshots in `dist/assets/`. Levels are linkable as `#level-01`, `#level-02`, and so on.
